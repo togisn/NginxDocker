@@ -10,7 +10,7 @@ env:
   ECR_REPOSITORY: my-ecr-repo
   ECS_SERVICE: EC2service
   ECS_CLUSTER: EC2cluster
-  ECS_TASK_DEFINITION: EC2:1
+  ECS_TASK_DEFINITION: EC2.json
   CONTAINER_NAME: nginx
 
 jobs:
