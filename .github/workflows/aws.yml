@@ -8,9 +8,9 @@ on:
 env:
   AWS_REGION: ap-southeast-1
   ECR_REPOSITORY: my-ecr-repo
-  ECS_SERVICE: EC2service
+  ECS_SERVICE: EC2s
   ECS_CLUSTER: EC2cluster
-  ECS_TASK_DEFINITION: EC2.json
+  ECS_TASK_DEFINITION: EC2TD.json
   CONTAINER_NAME: nginx
 
 jobs:

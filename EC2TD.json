@@ -11,7 +11,7 @@
         {
           "hostPort": 80,
           "protocol": "tcp",
-          "containerPort": 8080
+          "containerPort": 80
         }
       ],
       "command": null,
@@ -29,7 +29,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "822260713995.dkr.ecr.ap-southeast-1.amazonaws.com/my-ecr-repo:ed9437ce9ad3046bb90d11c073a671b26073ec3e",
+      "image": "nginx:latest",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -53,28 +53,32 @@
   "memory": "256",
   "taskRoleArn": null,
   "compatibilities": [
-    "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:822260713995:task-definition/EC2:4",
-  "family": "EC2",
+  "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:822260713995:task-definition/EC2TD:2",
+  "family": "EC2TD",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "ecs.capability.task-eni"
     }
   ],
   "pidMode": null,
   "requiresCompatibilities": [
-    "EXTERNAL",
     "EC2"
   ],
-  "networkMode": null,
+  "networkMode": "awsvpc",
   "runtimePlatform": null,
   "cpu": "128",
-  "revision": 4,
+  "revision": 2,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
