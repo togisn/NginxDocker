@@ -13,11 +13,6 @@
           "protocol": "tcp",
           "containerPort": 80
         },
-	{
-          "hostPort": 8081,
-          "protocol": "tcp",
-          "containerPort": 80
-        }
       ],
       "command": null,
       "linuxParameters": null,
