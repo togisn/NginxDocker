@@ -1,8 +1,7 @@
 # NginxDocker
 Install Nginx on Alpine by Docker
+        see Dockerfile
 
-see Dockerfile
------
 
 Github Action will deploy Docker into EC2 by yaml
 ![deploy](https://i.imgur.com/k7AUPhG.png "deploy")
